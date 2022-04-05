@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="main">
+        <div id="texto">
+            <h1 id="title">Could you please stay <i>one more minute</i> with us?</h1>
+            <p id="description">We would like to know how to make your visit <em>even</em> better!</p>
+        </div>
+
+        <form id="survey-form">
+            <div id="center">
+            <label for="name-label">Enter your name</label>
+            <input type="text" id="name-label" required placeholder="Your name">
+
+            <label for="email-label">Enter your e-mail</label>
+            <input type="email" id="email-label" placeholder="Your e-mail" required>
+
+            <label for="number-label">How many times you have been here?</label>
+            <input type="number" id="number-label" min="1" max="2" placeholder="Times here" required>
+
+            <label for="dropdown"><p>What pleases you the most in here?</p></label>
+            <select name="dropdown" id="dropdown">
+              <option value="price">Our lower price</option>
+              <option value="food">Our delicious food</option>
+              <option value="smiles">Our free smiles</option>
+            </select>
+        </div>
+
+            <div id="second">
+                <legend>A little more from <em>your</em> time here </legend>
+                <input type="checkbox" id="coffeebreak" name="coffeebreak" value="coffeebreak">
+                <label for="coffeebreak"> For the coffee break</label><br>
+                <input type="checkbox" id="lunch" name="lunch" value="lunch">
+                <label for="lunch"> To lunch</label><br> 
+                <input type="checkbox" id="dinner" name="dinner" value="dinner">
+                <label for="dinner"> To have dinner</label><br>
+            </div>
+
+            <div id="third">
+                <legend>How did you know about us? (Select one) </legend>
+                <input type="radio" id="Facebook" name="marketing" value="Facebook">
+                <label for="Facebook"> Facebook </label><br>
+                <input type="radio" id="Instagram" name="marketing" value="Instagram">
+                <label for="Instagram"> Instagram </label><br> 
+                <input type="radio" id="email" name="marketing" value="email">
+                <label for="email"> By e-mail </label><br>
+           
+            <label for="opinion" class="opinion">Your opinion about us:</label>
+            <textarea class="opinion" rows="4" cols="50"></textarea>
+        </div>
+            <input class="opinion" type="submit" value="Submit">
+        </form>
+</div>
+</body>
+</html>
